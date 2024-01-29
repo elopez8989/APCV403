@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lab-3</title>
+    <link rel="stylesheet" href="Fonts/fonts.css" />
+    <footer>
+      <p>
+        Last updated:
+        <span id="lastModified"></span>
+      </p>
+    </footer>
+    <script type="text/javascript">
+      var x = document.lastModified;
+      document.getElementById("lastModified").textContent = x;
+    </script>
+  </head>
+  <body>
+    <h1>Lopez Lab-3</h1>
+    <p>
+      There is a universal set of "web safe fonts". When a browser utilizes one
+      of these "safe" fonts, there is no external request made to retrieve the
+      font
+    </p>
+    <p>
+      becuase it is already embedded within the browser. These "web safe" fonts
+      can be displayed by all browsers.
+    </p>
+    <p>
+      You can either host your own fonts locally by downloading the font-face
+      kit onto your machine or you can use a font service that hosts the fonts
+      and then you would apply the html code into your css file.
+    </p>
+    <p>
+      When you use special fonts on your page, the browser will send a request
+      to the server that is hosting the font in an attempt to find and display
+      the font correctly. When a user accesses your site, the css font file you
+      have assigned to your page is downloaded with the page files itself and
+      display accordingly. A browser will always use the first file it can
+      access, even if it is not the primary font you have set.
+    </p>
+    <p>
+      MozDevNet. (n.d.). Web fonts - learn web development: MDN. MDN Web Docs.
+      https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts
+    </p>
+    <p>
+      How Browsers Manage Fonts. (n.d.).
+      https://www.practicalecommerce.com/How-Browsers-Manage-Fonts
+    </p>
+  </body>
+</html>
