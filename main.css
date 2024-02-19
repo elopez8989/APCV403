@@ -1,0 +1,48 @@
+* {
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(243, 159, 159);
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+   grid-template-areas: 
+   "header header header"
+   "sidebar main ad"
+   "footer footer footer";
+
+    min-height: 100vh;
+   
+}
+
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: sidebar;
+    border-style: double;
+}
+
+main {
+    grid-area: main;
+}
+
+aside:last-of-type {
+    grid-area: ad;
+}
+
+.peeps {
+    width: 500px; 
+}
+
+footer {
+    grid-area: footer;
+}
+
