@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lopez Module 6</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header><h1>Lopez Module 6 : Javascript</h1></header>
+    <aside>
+      <p>Navagation Menu</p>
+      <br />
+      <br />
+      <button>About Us</button>
+      <br />
+      <br />
+      <button>Services Offered</button><br /><br />
+      <button>Schedule a Call</button><br /><br />
+      <button>Request a Quote</button><br /><br />
+      <button>Contact Us</button><br /><br />
+    </aside>
+    <main>
+      <p>5+5 =</p>
+      <button onclick="showanswer()">Show Answer</button>
+    </main>
+    <aside>
+      <img class="peep" src="peep ad.jpg" alt="peeps" />
+      <h2 class="ad">Easter candy on SALE now!</h2>
+      <button id="amazon">Click Here To Purchase</button>
+    </aside>
+    <footer>
+      <p>
+        Last updated:
+        <span id="lastModified"></span>
+      </p>
+      <h2>Addendum</h2>
+      <p>
+        I used Javascript to literally solve a math problem. I made the problem
+        visable on the page via html code and then I used java to produce an
+        alert to show the answer. I couldnt decide how I wanted the output to
+        show. I found that there were several different ways I could have used
+        the JS to show the answer. I ultimatly went with the alert.
+      </p>
+    </footer>
+    <script type="text/javascript">
+      var x = document.lastModified;
+      document.getElementById("lastModified").textContent = x;
+    </script>
+  </body>
+  <script src="mod6.js"></script>
+</html>
