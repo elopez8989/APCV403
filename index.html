@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lights Out</title>
+    <link rel="stylesheet" href="lightsout.css" />
+  </head>
+  <body>
+    <div class="play">
+      <h1>LETS PLAY A GAME!</h1>
+    </div>
+    <div class="play2">
+      <h2>Lights Out</h2>
+    </div>
+    <div class="container">
+      <table id="board">
+        <tr>
+          <td class="cell" id="cell-0-0"></td>
+          <td class="cell" id="cell-0-1"></td>
+          <td class="cell" id="cell-0-2"></td>
+          <td class="cell" id="cell-0-3"></td>
+        </tr>
+        <tr>
+          <td class="cell" id="cell-1-0"></td>
+          <td class="cell" id="cell-1-1"></td>
+          <td class="cell" id="cell-1-2"></td>
+          <td class="cell" id="cell-1-3"></td>
+        </tr>
+        <tr>
+          <td class="cell" id="cell-2-0"></td>
+          <td class="cell" id="cell-2-1"></td>
+          <td class="cell" id="cell-2-2"></td>
+          <td class="cell" id="cell-2-3"></td>
+        </tr>
+        <tr>
+          <td class="cell" id="cell-3-0"></td>
+          <td class="cell" id="cell-3-1"></td>
+          <td class="cell" id="cell-3-2"></td>
+          <td class="cell" id="cell-3-3"></td>
+        </tr>
+      </table>
+    </div>
+    <script src="lightsout.js"></script>
+
+    <hr />
+    <div class="footer">
+      <h3>ADDENDUM</h3>
+      <p>
+        This project was a challenge. I decided to use a table becuase it was
+        the closet thing to a "game board". I oringinally tried with css grid to
+        make the board, but was able to get the js to correspond to what I was
+        trying to do.
+      </p>
+      <p>
+        I liked picking colors and fonts for my project. I also was adimit on
+        finding how to make the font blink. I did a lot of reading to interpret
+        how to make the game function. However, I wasnt able to connect an alert
+        with winning the game. I just coulndt put together the right syntax to
+        make this happen.
+      </p>
+
+      <p>
+        Last updated:
+        <span id="lastModified"></span>
+      </p>
+    </div>
+    <script type="text/javascript">
+      var x = document.lastModified;
+      document.getElementById("lastModified").textContent = x;
+    </script>
+  </body>
+</html>
