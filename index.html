@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lights Out</title>
+    <link rel="stylesheet" href="lightsout.css" />
+  </head>
+  <body>
+    <div class="play">
+      <h1>LETS PLAY A GAME!</h1>
+    </div>
+    <div class="play2">
+      <h2>Lights Out</h2>
+    </div>
+    <div class="container">
+      <table id="board">
+        <tr>
+          <td class="cell" id="cell-0-0"></td>
+          <td class="cell" id="cell-0-1"></td>
+          <td class="cell" id="cell-0-2"></td>
+          <td class="cell" id="cell-0-3"></td>
+        </tr>
+        <tr>
+          <td class="cell" id="cell-1-0"></td>
+          <td class="cell" id="cell-1-1"></td>
+          <td class="cell" id="cell-1-2"></td>
+          <td class="cell" id="cell-1-3"></td>
+        </tr>
+        <tr>
+          <td class="cell" id="cell-2-0"></td>
+          <td class="cell" id="cell-2-1"></td>
+          <td class="cell" id="cell-2-2"></td>
+          <td class="cell" id="cell-2-3"></td>
+        </tr>
+        <tr>
+          <td class="cell" id="cell-3-0"></td>
+          <td class="cell" id="cell-3-1"></td>
+          <td class="cell" id="cell-3-2"></td>
+          <td class="cell" id="cell-3-3"></td>
+        </tr>
+      </table>
+    </div>
+    <script src="lightsout.js"></script>
+
+    <footer>
+      <p>
+        Last updated:
+        <span id="lastModified"></span>
+      </p>
+    </footer>
+    <script type="text/javascript">
+      var x = document.lastModified;
+      document.getElementById("lastModified").textContent = x;
+    </script>
+  </body>
+</html>
